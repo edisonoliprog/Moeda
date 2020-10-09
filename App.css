@@ -1,0 +1,191 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    height: 40vmin;
+    pointer-events: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-spin infinite 20s linear;
+    }
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: rgb(255, 255, 255);
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.slide-down-enter,
+.slide-down-leave {
+    -webkit-transition: 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -moz-transition: 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -ms-transition: 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -o-transition: 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    transition: 200ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+.items-table .row {
+    border-bottom: 4px solid yellow;
+    line-height: 3em;
+}
+
+.items-table .row:last-child {
+    border-bottom: none;
+    line-height: 3em;
+}
+
+.slide-down-enter.slide-down-enter-active,
+.slide-down-leave {
+    opacity: 1;
+    height: 46px;
+}
+
+.slide-down-leave.slide-down-leave-active,
+.slide-down-enter {
+    opacity: 10;
+    height: 0px;
+}
+
+.invoice-number-container * {
+    font-weight: bold;
+}
+
+.items-table .row:nth-child(even) {
+    background:green;
+}
+
+.items-table input {
+    line-height: 1em;
+}
+
+.actions {
+    padding-top: 1em;
+}
+
+input:focus {
+    outline: 5;
+}
+
+.heading {
+    background-color: green;
+    color: black;
+    margin-bottom: 1em;
+    text-align: center;
+    line-height: 4em;
+}
+
+.branding {
+    padding-bottom: 1em;
+    border-bottom: 05px solid yellow;
+}
+
+.logo-container {
+    text-align: right;
+}
+
+.infos .right {
+    text-align: right;
+}
+
+.infos .right input {
+    text-align: right;
+}
+
+.infos .input-container {
+    padding: 3px 0;
+}
+
+.header.row {
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+
+input,
+textarea {
+    border: 1px solid rgb(79, 238, 39);
+}
+
+.container input:hover,
+.container textarea:hover,
+.table-striped>tbody>tr:nth-child(2n+1)>td input:hover,
+.container input:focus,
+.container textarea:focus,
+.table-striped>tbody>tr:nth-child(2n+1)>td input:focus {
+    border: 1px solid rgb(240, 211, 51);
+}
+
+.table-striped>tbody>tr:nth-child(2n+1)>td input {
+    background-color: red;
+    border: 1px solid #e6d711;
+}
+
+@media print {
+    .noPrint {
+        display: none;
+    }
+}
+
+body {
+    padding: 20px;
+}
+
+.infos input {
+    width: 300px;
+}
+
+.align-right input {
+    text-align: right;
+    width: 300px;
+}
+
+div.container {
+    width: 800px;
+}
+
+#imgInp {
+    display: none;
+}
+
+.copy {
+    font-family: "Colibri", "Ariel", "Lucida Sans", Geneva, Verdana, sans-serif;
+    width: 100%;
+    margin: 40px 0 20px 0;
+    font-size: 20px;
+    color: green; 
+    text-align: center;
+    color: #404040;
+    cursor: default;
+    line-height: 1.4em;
+}
+
+.copy .love {
+    display: inline-block;
+    position: relative;
+    color: rgb(226, 55, 212);
+}
